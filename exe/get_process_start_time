@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/get_process_start_time/cli'
+GetProcessStartTime::CLI.new.run
