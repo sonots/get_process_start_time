@@ -23,8 +23,20 @@ Or install it yourself as:
 ### CLI
 
 ```
-$ get_process_start_time <PID>
-<unix timestamp>
+Usage: get_process_start_time <PID>
+Or:    get_process_start_time test <PID> <COMPARTOR> <SECONDS>
+
+Get starting time of a process with unix timestamp
+
+  $ get_process_start_time <PID>
+  <unix timestamp>
+
+Test living duration of a process is less than (or greater than) a given seconds
+
+  $ get_process_start_time test_duration <PID> <COMPARTOR> <SECONDS>
+  $ echo $? # 0 or 1
+
+COMPARTOR: -lt (less than) or -gt (greater than)
 ```
 
 ### Library
